@@ -14,7 +14,7 @@ public class Panagram {
                 visted[(int) a.charAt(j) - 65] = true;
             }
         }
-        System.out.println(Arrays.toString(visted));
+        //System.out.println(Arrays.toString(visted));
         for(int i=0;i<visted.length;i++){
             if(!visted[i]){
                 return false;
