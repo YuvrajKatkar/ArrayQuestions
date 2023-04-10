@@ -8,7 +8,7 @@ public class Panagram {
         a=a.toUpperCase();
         boolean visted[]=new boolean[26];
         for(int j =0;j<a.length() ;j++){
-            if(a.charAt(j)!=' ') {
+            if(a.charAt(j)!=' ' && a.charAt(j)>='A'&& a.charAt(j)<='Z') {
 //                System.out.println(a.charAt(j));
                 //System.out.println((int) a.charAt(j) - 65);
                 visted[(int) a.charAt(j) - 65] = true;
@@ -26,6 +26,6 @@ public class Panagram {
 
         System.out.println("ENter the String");
         String s = new Scanner(System.in).nextLine();
-        System.out.println(check(s));
+        System.out.println(check(s)?"Is panagram":"Not panagram");
     }
 }
